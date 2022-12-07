@@ -11,4 +11,4 @@ This app was made using Vanilla JavaScript. This is my markTen project of neoG C
 1. CSS
 1. Javascript
 ___
-## [Try it out](changeregister.netlify.app)
+## [Try it out](https://changeregister.netlify.app/)
