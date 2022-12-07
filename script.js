@@ -39,6 +39,7 @@ function hideElement(elementToHide){
 
 function calculateChange(changeMoney) {
     for(let i=0; i<denominations.length; i++) {
+        showOnTable[i].classList.remove("grey");
         showOnTable[i].innerText = Math.trunc(changeMoney/denominations[i]);
         changeMoney = changeMoney%denominations[i];
         if(showOnTable[i].innerText == 0) {
