@@ -32,7 +32,9 @@ h1{
 }
 
 #error-message{
-    
+    background-color: brown;
+    color: wheat;
+    padding: 0.5rem;
 }
 
 button{
@@ -64,4 +66,10 @@ table{
 
 td{
     background-color: white;
+}
+
+.grey{
+    background-color: grey;
+    border-color: grey;
+    color: grey;
 }

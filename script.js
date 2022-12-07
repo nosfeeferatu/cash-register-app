@@ -42,9 +42,7 @@ function calculateChange(changeMoney) {
         showOnTable[i].innerText = Math.trunc(changeMoney/denominations[i]);
         changeMoney = changeMoney%denominations[i];
         if(showOnTable[i].innerText == 0) {
-            showOnTable[i].style.backgroundColor = "grey";
-            showOnTable[i].style.color = "grey";
-            showOnTable[i].style.borderColor = "grey";
+            showOnTable[i].classList.add("grey");
         }
     }
 }
