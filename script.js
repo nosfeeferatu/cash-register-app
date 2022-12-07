@@ -12,15 +12,15 @@ let denominations = [2000,500,100,20,10,5,1];
 nextButton.addEventListener("click", ()=> {
     hideElement(errorMessage);
     hideElement(nextSection);
-    if(billAmount.value > 0) {
+    if(parseInt(billAmount.value) > 0) {
         nextSection.style.display = "flex";
         // Calculate Button Clicking
         calculate.addEventListener("click", () => {
             hideElement(errorMessage);
             hideElement(table);
-            if(cashGiven.value >= billAmount.value) {
+            if(parseInt(cashGiven.value) >= parseInt(billAmount.value)) {
                 table.style.display = "table";
-                let changeMoney  = cashGiven.value - billAmount.value;
+                let changeMoney  = parseInt(cashGiven.value) - parseInt(billAmount.value);
                 calculateChange(changeMoney); 
             }
             else{
